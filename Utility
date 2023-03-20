@@ -1,0 +1,27 @@
+                                  PROCESSI:
+jobs: vedere processi in bg
+ps -aux: vedere tutti i processi
+
+                            SERVIZI E PORTE:
+
+1. cd etc, cat services: vedere porte e servizi
+2. netstat -tunlp (only server)
+
+                                  SERVICE:
+
+1. service <nome_service> status/start/stop
+2. systemctl start/stop/status <unit_name>
+
+                                    LOG:
+        journalctl is a utility for querying and displaying logs from journald, the logging service of systemd:
+1. journalctl -f -u <nome_servizio>
+2. cd var/log
+
+cattivi: 58.16.0.0
+
+              OPNSENSE:
+USER: root
+PASSWD: opnsense
+
+      SCAN PORTE APERTE E SERVIZI:
+nmap
