@@ -4,8 +4,9 @@ ps -aux: vedere tutti i processi
 
                             SERVIZI E PORTE:
 
-1. more /etc/services: vedere porte e servizi
+1. more /etc/services: vedere tutti i servizi con relative porte
 2. netstat -tunlp (only server)
+3. netstat -a Active Internet connections (servers and established)
 
                                   SERVIZI:
 
