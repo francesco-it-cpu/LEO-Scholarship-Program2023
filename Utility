@@ -23,11 +23,20 @@ ps -aux: vedere tutti i processi
                         SCAN PORTE APERTE E SERVIZI:
   nmap -a
 
-                    --------CVE-2021-3156 Baron Samedit------
-                    
-	apt-cache policy sudo
+                    --------(CVE-2021-3156) BARON SAMEDIT (1.8.2 to 1.8.31p2) & (1.9.0 to 1.9.5p1)------
+		    
+		PER VEDERE VERSIONE DI SUDO:     
+		apt-cache policy sudo
+		apt update
   
                 -----------------LOG4SHELL (CVE-2021-44228)-----------
+		affecting the Apache Log4j logging library versions 2.0 to 2.14.1
+		
+		DI SOLITO APACHE2 NON è VULN.
+		sudo apt list -a liblog4j1.2-java
+		sudo apt list apache-liblog4j1.2-java
+		apache -version
+		sudo apt remove liblog4j1.2-java
                 
   find / 2>/dev/null -regex ".*.jar" -type f | xargs -I{} grep JndiLookup.class "{}"
   zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
