@@ -18,11 +18,25 @@ ps -aux: vedere tutti i processi
 1. journalctl -f -u <nome_servizio>
 2. cd var/log
 
-cattivi: 58.16.0.0
+                            CATTIVI: 58.16.0.0
 
-              OPNSENSE:
-USER: root
-PASSWD: opnsense
+                        SCAN PORTE APERTE E SERVIZI:
+  nmap -a
 
-      SCAN PORTE APERTE E SERVIZI:
-nmap
+                    --------CVE-2021-3156 Baron Samedit------
+                    
+	apt-cache policy sudo
+  
+                -----------------LOG4SHELL (CVE-2021-44228)-----------
+                
+  find / 2>/dev/null -regex ".*.jar" -type f | xargs -I{} grep JndiLookup.class "{}"
+  zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
+  
+                             -------PER I CVE-----
+  exploit database
+  
+                          -----------LOG FILES----------
+  
+  System --> Log files --> audit: Debug (PER VEDERE TUTTI I LOG AL FIREWALL)
+  
+  Firewall --> Log files --> Plain view (VEDERE TUTTI I LOG E SCARICARLI)
