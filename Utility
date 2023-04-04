@@ -8,7 +8,7 @@ ps -aux: vedere tutti i processi
 2. netstat -tunlp (only server)
 3. netstat -a Active Internet connections (servers and established)
 
-                                  SERVIZI:
+                                  VEDERE STATUS SERVIZIO:
 
 1. service <nome_service> status/start/stop
 2. systemctl start/stop/status <unit_name>
