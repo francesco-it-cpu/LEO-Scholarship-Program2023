@@ -1,4 +1,6 @@
-                                  PROCESSI:
+PER CAMBIARE LE PASSWORD: passwd
+				  
+				  PROCESSI:
 jobs: vedere processi in bg
 ps -aux: vedere tutti i processi
 ps --forest
