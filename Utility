@@ -1,6 +1,7 @@
                                   PROCESSI:
 jobs: vedere processi in bg
 ps -aux: vedere tutti i processi
+ps --forest
 
                             SERVIZI E PORTE:
 
@@ -49,3 +50,14 @@ ps -aux: vedere tutti i processi
   System --> Log files --> audit: Debug (PER VEDERE TUTTI I LOG AL FIREWALL)
   
   Firewall --> Log files --> Plain view (VEDERE TUTTI I LOG E SCARICARLI)
+  
+  
+  			--------------INTRANET 10.0.0.5 (http://www.leodardo.ii/wp-login.php/)USER:admin PSW:sicura------------			
+			
+CMD-LINE:		
+  mysql
+  showdatabases;
+  use wordpress
+  show tables;
+  
+  
