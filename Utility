@@ -56,7 +56,7 @@ ps --forest
   Firewall --> Log files --> Plain view (VEDERE TUTTI I LOG E SCARICARLI)
   
   
-  			--------------INTRANET 10.0.0.5 (http://www.leodardo.ii/wp-login.php/)USER:admin PSW:sicura------------			
+  			--------------INTRANET 10.0.0.5 MariaDB------------			
 			
 CMD-LINE:		
   mysql
@@ -64,4 +64,4 @@ CMD-LINE:
   use wordpress
   show tables;
   
-  							------------------srv-www 10.0.0.4 (www.leodardo.ii)-----------------
+  				------------------srv-www 10.0.0.4(http://www.leodardo.ii/wp-login.php/)USER:admin PSW:sicura-----------------
