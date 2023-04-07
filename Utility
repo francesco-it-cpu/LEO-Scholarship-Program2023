@@ -64,4 +64,6 @@ CMD-LINE:
   use wordpress
   show tables;
   
-  				------------------srv-www 10.0.0.4(http://www.leodardo.ii/wp-login.php/)USER:admin PSW:sicura-----------------
+  			------------------srv-www 10.0.0.4(http://www.leodardo.ii/wp-login.php/)USER:admin PSW:sicura-----------------
+			
+			cambiare password dall admin
