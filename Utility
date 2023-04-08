@@ -1,8 +1,8 @@
-PIANO DI BATTAGLIA:
+					PIANO DI BATTAGLIA:
 
 1. guardare per vulnerabilità log4j
 2. "passwd" su tutte le macchine
-3. cambiare password su www.leodardo.ii/wp-login.php/
+3. cambiare password su www.leodardo.ii/wp-login.php/ (10.0.0.4)
 4. cambiare password sull'intranet http://10.0.0.5/phpmyadmin/ 
 4. aggiungere plugin "WP Activity Log"
 5. vedere i log di Wordpress: 
@@ -12,10 +12,10 @@ tail -f error.log OPPURE tail -f access.log
 
 
 
-PER CAMBIARE LE PASSWORD: passwd
+			PER CAMBIARE LE PASSWORD: passwd
 				  
 				  PROCESSI:
-jobs: vedere processi in bg
+				  
 ps -aux: vedere tutti i processi
 ps --forest
 
