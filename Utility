@@ -1,3 +1,16 @@
+PIANO DI BATTAGLIA:
+
+1. guardare per vulnerabilità log4j
+2. "passwd" su tutte le macchine
+3. cambiare password su www.leodardo.ii/wp-login.php/
+4. aggiungere plugin "WP Activity Log"
+5. vedere i log di Wordpress: 
+sulla 10.0.0.4 (leodardo.ii)
+cd /var/log/apache2 
+tail -f error.log OPPURE tail -f access.log
+
+
+
 PER CAMBIARE LE PASSWORD: passwd
 				  
 				  PROCESSI:
@@ -19,7 +32,7 @@ ps --forest
                                     LOG:
         journalctl is a utility for querying and displaying logs from journald, the logging service of systemd:
 1. journalctl -f -u <nome_servizio>
-2. cd var/log
+2. cd /var/log
 
                             CATTIVI: 58.16.0.0
 
