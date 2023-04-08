@@ -6,7 +6,7 @@
 4. cambiare password sull'intranet http://10.0.0.5/phpmyadmin/ 
 4. aggiungere plugin "WP Activity Log"
 5. vedere i log di Wordpress: 
-	sulla 10.0.0.4 (leodardo.ii)
+	su 10.0.0.4 (leodardo.ii)
 	cd /var/log/apache2 
 	tail -f error.log OPPURE tail -f access.log
 
@@ -24,7 +24,7 @@ ps --forest
 2. netstat -tunlp (only server)
 3. netstat -a Active Internet connections (servers and established)
 
-                              VEDERE STATUS SERVIZIO:
+                              VEDERE STATUS SERVIZIO o FAR RIPARTIRE UN SERVIZIO:
 
 1. service <nome_service> status/start/stop
 2. systemctl start/stop/status <unit_name>
