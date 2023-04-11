@@ -87,3 +87,6 @@ CMD-LINE:
   
   			------------------10.0.0.4(http://www.potenzio.ii/wp-login.php/)USER:admin PSW:sicura-----------------
 			
+			
+						COMMAND SCP:
+scp -v /home/franc/Desktop/prova kali@192.168.85.134:/home/kali/Documents
