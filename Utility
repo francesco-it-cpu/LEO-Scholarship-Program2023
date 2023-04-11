@@ -2,25 +2,29 @@
 
 1. guardare per vulnerabilità log4j
 2. "passwd" su tutte le macchine
-3. cambiare password su Wordpress: www.leodardo.ii/wp-login.php/ (10.0.0.4)
+3. cambiare password su Wordpress: www.potenzio.ii/wp-login.php/ (10.0.0.4)
 4. cambiare password sull'intranet http://10.0.0.5/phpmyadmin/ 
 4. aggiungere plugin "WP Activity Log"
-5. vedere i log di Wordpress: 
+5. disattivare tutti i plugin presenti
+6. vedere i log di Wordpress: 
 	su 10.0.0.4 (leodardo.ii)
 	cd /var/log/apache2 
 	tail -f error.log OPPURE tail -f access.log
 
 
+				    UTENTI:
+				cat /etc/passwd
+				userdel -r <nome_utente>
+				
 				  
 				  PROCESSI:
 				  
 ps -aux: vedere tutti i processi
-ps --forest
 
                             SERVIZI E PORTE:
 
 1. more /etc/services: vedere tutti i servizi con relative porte
-2. netstat -tunlp (only server)
+2. netstat -anp --inet
 3. netstat -a Active Internet connections (servers and established)
 
                               VEDERE STATUS SERVIZIO o FAR RIPARTIRE UN SERVIZIO:
@@ -33,6 +37,8 @@ ps --forest
 1. journalctl -f -u <nome_servizio>
 2. cd /var/log
 3. tail -f <nomefile>
+4. last "LASTLOGIN"
+5. who  "chi è loggato attualmente"
 
                             CATTIVI: 58.16.0.0
 
@@ -43,6 +49,8 @@ ps --forest
 		    
 		PER VEDERE VERSIONE DI SUDO:     
 		apt-cache policy sudo
+		
+		MITIGARE VULNERABILITA'
 		apt update
   
                 -----------------LOG4SHELL (CVE-2021-44228)-----------
@@ -77,6 +85,5 @@ CMD-LINE:
   use wordpress
   show tables;
   
-  			------------------10.0.0.4(http://www.leodardo.ii/wp-login.php/)USER:admin PSW:sicura-----------------
+  			------------------10.0.0.4(http://www.potenzio.ii/wp-login.php/)USER:admin PSW:sicura-----------------
 			
-			cambiare password dall admin
