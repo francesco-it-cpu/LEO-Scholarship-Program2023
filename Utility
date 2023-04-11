@@ -1,12 +1,14 @@
-					PIANO DI BATTAGLIA:
+					PIANO DI BATTAGLIA:  ---> CATTIVI: 58.16.0.0/15
 
 1. guardare per vulnerabilità log4j
 2. "passwd" su tutte le macchine
 3. cambiare password su Wordpress: www.potenzio.com/wp-login.php/ (10.0.0.4)
 4. cambiare password sull'intranet http://10.0.0.5/phpmyadmin/ 
 5. cambiare password del firewall
-6. aggiungere plugin "WP Activity Log"
-7. disattivare tutti i plugin presenti
+6. disattivare tutti i plugin presenti
+7. blocco ssh (protocollo TCP/UDP, DESTINATION: ANY, PORT:SSH) su tutta la rete 58.16.0.0/15 tranne che per 58.16.0.2
+	prima faccio la regola che PASS SSH per 58.16.0.2
+	seconda regola che BLOCK SSH per tutta la rete
 8. vedere i log di Wordpress: 
 	su 10.0.0.4 (leodardo.ii)
 	cd /var/log/apache2 
@@ -41,8 +43,7 @@ ps -aux: vedere tutti i processi
 4. last "LASTLOGIN"
 5. who  "chi è loggato attualmente"
 
-                            CATTIVI: 58.16.0.0
-
+                           		
                         SCAN PORTE APERTE E SERVIZI:
   nmap -a
 
