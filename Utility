@@ -2,7 +2,7 @@
 
 1. guardare per vulnerabilità log4j
 2. "passwd" su tutte le macchine
-3. cambiare password su Wordpress: www.potenzio.com/wp-login.php/ (10.0.0.4)
+3. cambiare password su Wordpress: www.potenzio.com/wp-login.php/ (10.0.0.4) NUOVA PASSWORD: Leonardo01/01/199
 4. cambiare password sull'intranet http://10.0.0.5/phpmyadmin/ 
 5. cambiare password del firewall
 6. disattivare tutti i plugin presenti
@@ -11,6 +11,10 @@
 	seconda regola che BLOCK SSH per tutta la rete
 8. vedere i log di Wordpress: 
 	su 10.0.0.4 (leodardo.ii)
+	cd /var/log/apache2 
+	tail -f error.log OPPURE tail -f access.log
+9. vedere i log di phpmyadmin:
+	su 10.0.0.5
 	cd /var/log/apache2 
 	tail -f error.log OPPURE tail -f access.log
 
@@ -52,7 +56,7 @@ ps -aux: vedere tutti i processi
 		PER VEDERE VERSIONE DI SUDO:     
 		apt-cache policy sudo
 		
-		MITIGARE VULNERABILITA'
+		MITIGARE LA VULNERABILITA'
 		apt update
   
                 -----------------LOG4SHELL (CVE-2021-44228)-----------
